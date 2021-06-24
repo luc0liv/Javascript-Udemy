@@ -72,6 +72,7 @@
   </div>
 
   <div id="output"></div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
   const output = document.getElementById("output")
 
@@ -91,7 +92,12 @@
 
   const limparTabuada = () => {
     output.innerHTML = ""
-    alert("Limpinho!")
+    swal({
+  title: "Limpinho!",
+  text: "Já pode começar novamente",
+  icon: "success",
+
+});
   }
 </script>
 </body>
